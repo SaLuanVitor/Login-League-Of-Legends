@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Montserrat:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.containLol {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.whiteLog {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logoRiot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoRiot img {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 50%;
+    height: 40%;
+
+}
+
+h1 {
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.logarLol {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.formL {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40%;
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.formL label {
+    position: relative;
+    top: 1.3em;
+    font-size: 0.6rem;
+    left: 1em;
+}
+
+.formL input {
+    padding: 5%;
+    border-radius: 2%;
+    border: none;
+}
+
+.loginLol {
+    background-color: #E8E6E6;
+}
+
+.passwordLol {
+    background-color: #E8E6E6;
+
+}
+
+.imgPlat {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 15%;
+    justify-content: space-around;
+}
+
+.imgPlat img {
+    width: 15px;
+    height: 15px;
+}
+
+.face {
+    cursor: pointer;
+    background-color: blue;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 1.5em;
+}
+
+.google {
+    cursor: pointer;
+    width: 4em;
+    background-color: red;
+    display: flex;
+    height: 1.5em;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.apple {
+    cursor: pointer;
+    background-color: black;
+    width: 4em;
+    height: 1.5em;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkLol {
+    font-weight: 800;
+}
+
+.checkLol {
+    width: 55%;
+    padding-left: 2em;
+    padding-top: 1.5em;
+}
+
+.checkL {
+    display: none;
+}
+
+.checkLol input+label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-right: 0.5em;
+    border-radius: 2%;
+    background-color: #D9D9D9;
+    display: inline-block;
+}
+
+.checkLol input:checked+label::before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+}
+
+.btnContain {
+    margin-top: 3em;
+}
+
+.btn {
+    margin: 0 auto;
+    border: none;
+    background-color: #FF002E36;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 1em;
+    margin-top: 0.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.imgBaron {
+    width: 75%;
+}
+
+.imgBaron img {
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+    .containLol {
+        flex-direction: column;
+    }
+
+    .whiteLog {
+        width: 60%;
+        margin: 0 auto;
+
+    }
+
+    .checkLol {
+        margin-left: 1em;
+        font-size: 0.5em;
+    }
+
+
+    .imgBaron {
+        width: 100%;
+        margin-top: 5em;
+    }
+}
+
+@media (max-width:425px) {
+    .imgPlat {
+        width: 70%;
+    }
+
+    .face {
+        width: 3em;
+    }
+
+    .google {
+        width: 3em;
+    }
+
+    .apple {
+        width: 3em;
+    }
+
+    nav a {
+        font-size: 0.7em;
+    }
+
+}
