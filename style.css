@@ -199,6 +199,23 @@ nav a:hover {
     width: 100%;
 }
 
+.baronRoubo {
+    display: none;
+}
+
+.ativo {
+    display: initial;
+}
+
+.desativo {
+    display: none;
+}
+
+.cor {
+    background-color: #ff002feb;
+    cursor: pointer;
+}
+
 @media (max-width:1200px) {
     .containLol {
         flex-direction: column;
